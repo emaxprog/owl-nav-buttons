@@ -1,0 +1,30 @@
+//Owl params
+        navText:['<i class="fa fa-angle-left fa-5x" aria-hidden="true"></i>','<i class="fa fa-angle-right fa-5x" aria-hidden="true"></i>'],
+
+//SASS
+
+.owl-carousel{
+  position: relative;
+  .owl-nav{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    .owl-prev,.owl-next{
+      display: flex;
+      align-items: center;
+      background-color: rgba(0,0,0,.25);
+      &:hover{
+        background-color: rgba(0,0,0,.5);
+      }
+      height: 100%;
+      .fa{
+        color: rgba(255,255,255,.3);
+        margin: 10px;
+      }
+    }
+  }
+}
+
